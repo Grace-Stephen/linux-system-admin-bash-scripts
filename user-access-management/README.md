@@ -44,3 +44,8 @@ Tested Environment:
 - OS: Ubuntu 22.04 LTS (WSL2)
 - Bash version: 5.2.21
 
+### create_users.sh Sample Output
+sudo ./create_users.sh Uche
+Group 'Uche' created
+passwd: password changed.
+User 'Uche' created and added to group 'Uche'
