@@ -44,8 +44,25 @@ Tested Environment:
 - OS: Ubuntu 22.04 LTS (WSL2)
 - Bash version: 5.2.21
 
-### create_users.sh Sample Output
-sudo ./create_users.sh Uche
-Group 'Uche' created
+### create_users.sh Sample Output when the script was executed
+sudo ./create_users.sh Vincent
+Group 'Vincent' created
 passwd: password changed.
-User 'Uche' created and added to group 'Uche'
+User 'Vincent' created and added to group 'Vincent'
+Temporary password set. User must change password on first login.
+
+-- Logged in as Vincent then got this:
+ su - Vincent
+Password:
+You are required to change your password immediately (administrator enforced).
+Changing password for Vincent.
+Current password:
+
+### disable_users.sh Sample Output when the script was executed
+sudo ./disable_users.sh Vincent
+User 'Vincent' has been disabled
+
+--Tried logging as Vincent to confirm
+ su - Vincent
+Password:
+su: Authentication failure
